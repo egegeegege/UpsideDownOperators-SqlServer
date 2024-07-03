@@ -93,9 +93,39 @@ namespace UpsideDownOperators.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngwing_com__10_ {
+            get {
+                object obj = ResourceManager.GetObject("pngwing.com (10)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngwing_com__7_ {
             get {
                 object obj = ResourceManager.GetObject("pngwing.com (7)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngwing_com__8_ {
+            get {
+                object obj = ResourceManager.GetObject("pngwing.com (8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngwing_com__9_ {
+            get {
+                object obj = ResourceManager.GetObject("pngwing.com (9)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

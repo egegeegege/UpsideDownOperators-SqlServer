@@ -43,7 +43,10 @@ namespace UpsideDownOperators
             {
                 if (Sifre == txt_sifre.Text)
                 {
-                    MessageBox.Show("Başarıyla giriş yaptınız");
+                    MessageBox.Show("Başarıyla giriş yaptınız 😊");
+                    frmYoneticiPanel frmYoneticiPanel = new frmYoneticiPanel();
+                    frmYoneticiPanel.Show();
+                    this.Hide();
                 }
                 else
                 {

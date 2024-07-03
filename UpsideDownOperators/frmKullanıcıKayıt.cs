@@ -69,5 +69,12 @@ namespace UpsideDownOperators
 
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmKullanıcıGiris frmKullanıcıGiris = new frmKullanıcıGiris();
+            frmKullanıcıGiris.Show();
+            this.Hide();
+        }
     }
 }
