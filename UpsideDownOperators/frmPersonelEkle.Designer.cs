@@ -38,7 +38,6 @@
             this.txt_adres = new System.Windows.Forms.TextBox();
             this.txt_telefon = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
-            this.txt_maastipi = new System.Windows.Forms.TextBox();
             this.txt_isegiristarihi = new System.Windows.Forms.TextBox();
             this.txt_sifre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,8 +49,9 @@
             this.txt_gorev = new System.Windows.Forms.TextBox();
             this.txt_tc = new System.Windows.Forms.TextBox();
             this.PB_resim = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FileName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.cmb_maas = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_resim)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +67,7 @@
             this.btn_kayitol.TabIndex = 32;
             this.btn_kayitol.Text = "Personel Ekle";
             this.btn_kayitol.UseVisualStyleBackColor = false;
+            this.btn_kayitol.Click += new System.EventHandler(this.btn_kayitol_Click);
             // 
             // label7
             // 
@@ -155,13 +156,6 @@
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(200, 20);
             this.txt_email.TabIndex = 15;
-            // 
-            // txt_maastipi
-            // 
-            this.txt_maastipi.Location = new System.Drawing.Point(282, 144);
-            this.txt_maastipi.Name = "txt_maastipi";
-            this.txt_maastipi.Size = new System.Drawing.Size(200, 20);
-            this.txt_maastipi.TabIndex = 23;
             // 
             // txt_isegiristarihi
             // 
@@ -254,15 +248,16 @@
             this.PB_resim.Location = new System.Drawing.Point(627, 41);
             this.PB_resim.Name = "PB_resim";
             this.PB_resim.Size = new System.Drawing.Size(237, 286);
+            this.PB_resim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_resim.TabIndex = 45;
             this.PB_resim.TabStop = false;
             // 
-            // textBox1
+            // FileName
             // 
-            this.textBox1.Location = new System.Drawing.Point(282, 306);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(119, 20);
-            this.textBox1.TabIndex = 23;
+            this.FileName.Location = new System.Drawing.Point(282, 306);
+            this.FileName.Name = "FileName";
+            this.FileName.Size = new System.Drawing.Size(119, 20);
+            this.FileName.TabIndex = 23;
             // 
             // button1
             // 
@@ -272,6 +267,18 @@
             this.button1.TabIndex = 46;
             this.button1.Text = "Resim Yükle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cmb_maas
+            // 
+            this.cmb_maas.FormattingEnabled = true;
+            this.cmb_maas.Items.AddRange(new object[] {
+            "Asgari Ücret",
+            "Özel Ücret"});
+            this.cmb_maas.Location = new System.Drawing.Point(282, 142);
+            this.cmb_maas.Name = "cmb_maas";
+            this.cmb_maas.Size = new System.Drawing.Size(200, 21);
+            this.cmb_maas.TabIndex = 47;
             // 
             // frmPersonelEkle
             // 
@@ -279,6 +286,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.ClientSize = new System.Drawing.Size(945, 486);
+            this.Controls.Add(this.cmb_maas);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.PB_resim);
             this.Controls.Add(this.label4);
@@ -299,8 +307,7 @@
             this.Controls.Add(this.txt_adres);
             this.Controls.Add(this.txt_telefon);
             this.Controls.Add(this.txt_email);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.txt_maastipi);
+            this.Controls.Add(this.FileName);
             this.Controls.Add(this.txt_isegiristarihi);
             this.Controls.Add(this.txt_sifre);
             this.Name = "frmPersonelEkle";
@@ -322,7 +329,6 @@
         private System.Windows.Forms.TextBox txt_adres;
         private System.Windows.Forms.TextBox txt_telefon;
         private System.Windows.Forms.TextBox txt_email;
-        private System.Windows.Forms.TextBox txt_maastipi;
         private System.Windows.Forms.TextBox txt_isegiristarihi;
         private System.Windows.Forms.TextBox txt_sifre;
         private System.Windows.Forms.Label label4;
@@ -334,7 +340,8 @@
         private System.Windows.Forms.TextBox txt_gorev;
         private System.Windows.Forms.TextBox txt_tc;
         private System.Windows.Forms.PictureBox PB_resim;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox FileName;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmb_maas;
     }
 }

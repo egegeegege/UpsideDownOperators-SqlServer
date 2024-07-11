@@ -22,5 +22,11 @@ namespace UpsideDownOperators
             frmPersonelEkle frmPersonelEkle = new frmPersonelEkle();
             frmPersonelEkle.Show();
         }
+
+        private void btn_calısanekle_Click(object sender, EventArgs e)
+        {
+            FrmCalısanlaraBak calısanlaraBak = new FrmCalısanlaraBak();
+            calısanlaraBak.Show();
+        }
     }
 }

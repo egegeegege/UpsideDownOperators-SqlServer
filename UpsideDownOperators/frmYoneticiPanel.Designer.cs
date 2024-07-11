@@ -94,6 +94,7 @@
             this.btn_calısanekle.TabIndex = 2;
             this.btn_calısanekle.Text = "Çalışanlara bak";
             this.btn_calısanekle.UseVisualStyleBackColor = true;
+            this.btn_calısanekle.Click += new System.EventHandler(this.btn_calısanekle_Click);
             // 
             // pictureBox3
             // 

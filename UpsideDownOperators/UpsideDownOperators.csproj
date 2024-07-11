@@ -58,6 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCalısanlaraBak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalısanlaraBak.Designer.cs">
+      <DependentUpon>FrmCalısanlaraBak.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKullanıcıGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="frmKullanıcıKayıt.Designer.cs">
       <DependentUpon>frmKullanıcıKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonelDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonelDetay.Designer.cs">
+      <DependentUpon>frmPersonelDetay.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPersonelEkle.cs">
       <SubType>Form</SubType>
@@ -93,11 +105,17 @@
     <Compile Include="frmYoneticiPanel.Designer.cs">
       <DependentUpon>frmYoneticiPanel.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmCalısanlaraBak.resx">
+      <DependentUpon>FrmCalısanlaraBak.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmKullanıcıGiris.resx">
       <DependentUpon>frmKullanıcıGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKullanıcıKayıt.resx">
       <DependentUpon>frmKullanıcıKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonelDetay.resx">
+      <DependentUpon>frmPersonelDetay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPersonelEkle.resx">
       <DependentUpon>frmPersonelEkle.cs</DependentUpon>
