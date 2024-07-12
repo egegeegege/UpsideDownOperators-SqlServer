@@ -41,6 +41,19 @@ namespace UpsideDownOperators
         private void FrmCalısanlaraBak_Load(object sender, EventArgs e)
         {
             verigetir();
+            dgv_PersonelListesi.DefaultCellStyle.BackColor = Color.LightBlue;
+            dgv_PersonelListesi.DefaultCellStyle.ForeColor = Color.Black;
+            dgv_PersonelListesi.DefaultCellStyle.Font = new Font("Arial", 10);
+
+            dgv_PersonelListesi.Columns[0].HeaderCell.Style.BackColor = Color.DarkBlue;
+            dgv_PersonelListesi.Columns[0].HeaderCell.Style.ForeColor = Color.White;
+
+            dgv_PersonelListesi.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
+
+            dgv_PersonelListesi.EnableHeadersVisualStyles = false;
+
+            dgv_PersonelListesi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
 
         private void dgv_PersonelListesi_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -52,6 +65,11 @@ namespace UpsideDownOperators
             frmPersonelDetay.id = id;
             frmPersonelDetay.base64Image = ImageBase64;
             frmPersonelDetay.Show();
+        }
+
+        private void dgv_PersonelListesi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

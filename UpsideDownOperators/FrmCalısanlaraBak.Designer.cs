@@ -35,11 +35,13 @@
             // 
             // dgv_PersonelListesi
             // 
+            this.dgv_PersonelListesi.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgv_PersonelListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_PersonelListesi.Location = new System.Drawing.Point(140, 115);
             this.dgv_PersonelListesi.Name = "dgv_PersonelListesi";
             this.dgv_PersonelListesi.Size = new System.Drawing.Size(806, 431);
             this.dgv_PersonelListesi.TabIndex = 0;
+            this.dgv_PersonelListesi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_PersonelListesi_CellContentClick);
             this.dgv_PersonelListesi.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_PersonelListesi_CellMouseClick);
             // 
             // label1
